@@ -71,19 +71,26 @@ hr {
 table {
     margin: 2rem 0 0 0;
     width: 100%;
+    border-collapse: collapse;
     
 }
 table span {
     color: rgb(133, 70, 50);
 }
 td {
-    padding: .5rem;
+    padding: .6rem;
+    border-bottom: .5px solid rgba(95, 87, 78, 0.229);
+    padding-left: 2rem;
+}
+.none td {
+    border-bottom: none;
 }
 
 
 
 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:650px) {
     body {
         padding: 0;
         width: 100%;
@@ -117,6 +124,10 @@ td {
     footer {
         padding: 0 2.5rem 2.5rem 2.5rem;
         
+    }
+    td {        
+        border-bottom: .5px solid rgba(95, 87, 78, 0.229);
+        padding-left: 0;
     }
     
 }
